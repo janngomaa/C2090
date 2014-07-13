@@ -1,0 +1,2685 @@
+<BODY>
+	<DIV id="page_1">
+		<P class="p0 ft0">Question: 1</P>
+		<P class="p1 ft1">You have a job that reads in Sequential File followed by a Transformer stage. When you run this job, which partitioning method will be used by default?</P>
+		<P class="p2 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Hash</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Same</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Random</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Round Robin</SPAN>
+		</P>
+		<P class="p4 ft4">Answer: D</P>
+		<P class="p5 ft0">Question: 2</P>
+		<P class="p6 ft1">Which two statements are true about the use of named node pools? (Choose two.)</P>
+		<P class="p7 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Named node pools can allow separation of buffering from sorting disks.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Clustered environments must have named node pools for data processing.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Using appropriately named node pools forces DataStage to use named pipes between stages.</SPAN>
+		</P>
+		<P class="p8 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Named node pools constraints will limit stages to be executed only on the nodes defined in the node pools.</SPAN>
+		</P>
+		<P class="p9 ft4">Answer: A, D</P>
+		<P class="p5 ft0">Question: 3</P>
+		<P class="p10 ft1">You are asked by management to document all jobs written to make future maintenance easier. Which two statements are true about annotations? (Choose two.)</P>
+		<P class="p11 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">The full job description can be identified within the Description Annotation stage.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">The background for the Description Annotation stage can be changed for each unique stage.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">The Description Annotation stage contains both the short and full descriptions for the job.</SPAN>
+		</P>
+		<P class="p12 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">The Description Annotation stage can be added several times at different locations to identify business logic.</SPAN>
+		</P>
+		<P class="p9 ft4">Answer: A, C</P>
+		<P class="p13 ft0">Question: 4</P>
+	</DIV>
+	<DIV id="page_2">
+		<P class="p14 ft5">You have run ten instances of the same job the previous evening. You want to examine the job logs for all instances but can only find five of them. How can you avoid this in the future for this job?</P>
+		<P class="p7 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Change the </SPAN>
+			<NOBR>Auto-purge</NOBR> settings in Administrator.</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Change the </SPAN>
+			<NOBR>Auto-purge</NOBR> settings for the job in Director.</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Set the $APT_AUTOPURGE_LOG environment variable to False.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Set the $APT_AUTOLOG_PURGE environment variable to False.</SPAN>
+		</P>
+		<P class="p15 ft4">Answer: B</P>
+		<P class="p13 ft0">Question: 5</P>
+		<P class="p16 ft1">A customer is complaining of poor performance from the job shown in the exhibit, which aggregates and joins on ZIP code. Currently all partitioning is set to “Auto” and sort/partition insertion is allowed.</P>
+		<P class="p17 ft1">What would give the best performance improvement for the job?</P>
+		<P class="p2 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Hash partition and sort on ZIP code on the input links to the Aggregator and Join stages.</SPAN>
+		</P>
+		<P class="p18 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Hash partition and sort on ZIP code prior to the Copy stage, and use same partitioning on the Aggregator and Join stages.</SPAN>
+		</P>
+		<P class="p19 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Use same partitioning on all input links in the job; create the input data set by </SPAN>
+			<NOBR>hash-partitioning</NOBR> its input on ZIP code.</P>
+		<P class="p20 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Hash partition and sort on ZIP code prior to the Copy stage and use entire partitioning on the output of the Aggregator stage.</SPAN>
+		</P>
+		<P class="p15 ft4">Answer: B</P>
+		<P class="p5 ft0">Question: 6</P>
+		<P class="p21 ft1">Which two tasks can the Slowly Changing Dimensions (SCD) stage perform? (Choose two.)</P>
+		<P class="p22 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Look up whether a record with a matching business key value exists in a dimension table. If it does, add new values for selected fields to values lists for those fields.</SPAN>
+		</P>
+		<P class="p23 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Look up whether a record with a matching business key value exists in a fact table. If it does not, retrieve a new surrogate key value and insert a new row into the fact table.</SPAN>
+		</P>
+		<P class="p24 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Look up whether a record with a matching business key value exists in a dimension table. If it does not, retrieve a new surrogate key value and insert a new row into the dimension table.</SPAN>
+		</P>
+	</DIV>
+	<DIV id="page_3">
+
+
+
+		<P class="p25 ft5">D. Look up whether a record with a matching business key value exists in a dimension table. If it does, mark the record as <NOBR>not-current,</NOBR> and generate a new record with new values for selected fields.</P>
+		<P class="p26 ft4">Answer: C, D</P>
+		<P class="p5 ft0">Question: 7</P>
+		<P class="p6 ft1">In which two situations is it appropriate to use a Sparse Lookup? (Choose two.)</P>
+		<P class="p7 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">When accessing DB2 data using the DB2 API stage.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">When the output of the Lookup stage needs to be hashed partitioned.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">When reference data is significantly larger than the streaming data (100:1).</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">When invoking a stored procedure within a database per row in the streaming link.</SPAN>
+		</P>
+		<P class="p28 ft4">Answer: C, D</P>
+		<P class="p5 ft0">Question: 8</P>
+		<P class="p29 ft1">You set environment variable $APT_ORACLE_LOAD_OPTIONSPTIONS(DIRECT=TRUE, PARALLELTRUE)?for loading index organized tables. You set environment variable $APT_ORACLE_LOAD_OPTIONS=?PTIONS(DIRECT=TRUE, PARALLELTRUE)?for loading index organized tables. Which statement is accurate regarding the resulting effect of this environment variable setting?</P>
+		<P class="p11 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Oracle load will fail when executed.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Oracle load will run in parallel and bypass DataStage Director.</SPAN>
+		</P>
+		<P class="p3 ft6">
+			<SPAN class="ft6">C.</SPAN>
+			<SPAN class="ft7">The Oracle load will run in parallel using simple direct path mode.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">The Oracle database stage will run in parallel using conventional path mode.</SPAN>
+		</P>
+		<P class="p15 ft4">Answer: A</P>
+		<P class="p5 ft0">Question: 9</P>
+		<P class="p30 ft1">Which job design technique can be used to give unique names to sequential output files that are used in <NOBR>multi-instance</NOBR> jobs?</P>
+		<P class="p2 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Use parameters to identify file names.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Generate unique file names by using a macro.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Use DSJoblnvocationlD to generate a unique filename.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Use a Transformer stage variable to generate the name.</SPAN>
+		</P>
+	</DIV>
+	<DIV id="page_4">
+		<P class="p31 ft4">Answer: A</P>
+		<P class="p32 ft0">Question: 10</P>
+		<P class="p6 ft1">Which two statements are correct when referring to an Aggregator Stage? (Choose two.)</P>
+		<P class="p2 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Use Sort method for a limited number of distinct key values.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Use Hash method for a limited number of distinct key values.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Use Sort method with a large number of distinct </SPAN>
+			<NOBR>key-column</NOBR> values.</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Use Hash method with a large number of distinct </SPAN>
+			<NOBR>key-column</NOBR> values.</P>
+		<P class="p33 ft4">Answer: B, C</P>
+		<P class="p34 ft0">Question: 11</P>
+		<P class="p6 ft1">In which two situations would you use the Web Services Client stage? (Choose two.)</P>
+		<P class="p7 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">You need to create a WSDL.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">You want to deploy a service.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">You do not need both input and output links in a single web service operation.</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">You need the Web service to act as either a data source or a data target during an operation.</SPAN>
+		</P>
+		<P class="p28 ft4">Answer: C, D</P>
+		<P class="p34 ft0">Question: 12</P>
+		<P class="p35 ft1">You are describing to your customer how to work with packages. There are two steps that must be carried out in order to move the package to a target project. Which two steps must be carried out to move the DataStage objects to the Production system? (Choose two.)</P>
+		<P class="p2 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Build</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Export</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Deploy</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Package</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">E.</SPAN>
+			<SPAN class="ft3">Compile</SPAN>
+		</P>
+		<P class="p9 ft4">Answer: A, C</P>
+		<P class="p36 ft0">Question: 13</P>
+	</DIV>
+	<DIV id="page_5">
+		<P class="p37 ft1">The derivation for a stage variable is: Upcase(input_column1):’’:</P>
+		<P class="p38 ft1">Upcase(input_column2). Suppose that input_column1 contains a NULL value. Which behavior is expected?</P>
+		<P class="p11 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">The job aborts.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">NULL is written to the target stage variable.</SPAN>
+		</P>
+		<P class="p39 ft6">
+			<SPAN class="ft6">C.</SPAN>
+			<SPAN class="ft7">The input row is either dropped or rejected depending on whether the Transformer has a reject link.</SPAN>
+		</P>
+		<P class="p40 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">The target stage variable is populated with spaces or zeros depending on the stage variable data type.</SPAN>
+		</P>
+		<P class="p15 ft4">Answer: B</P>
+		<P class="p34 ft0">Question: 14</P>
+		<P class="p41 ft1">A star schema data warehouse consists of four dimension tables and one fact table. How many Slowly Changing Dimensions (SCD) stages will you need in your jobs to update the star schema tables?</P>
+		<P class="p7 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">two</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">three</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">four</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">five</SPAN>
+		</P>
+		<P class="p15 ft4">Answer: C</P>
+		<P class="p34 ft0">Question: 15</P>
+		<P class="p42 ft5">A client needs to process a flat file where a set of values in the import data columns should be treated as Null. What is the best way to handle multiple Null values using a Sequential File stage?</P>
+		<P class="p43 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">On the Input Link format tab, specify the null values in double quotes separated by a comma in the Null field value property.</SPAN>
+		</P>
+		<P class="p44 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">On the Output Link format tab, specify the null values in double quotes separated by a comma in the Null field value property.</SPAN>
+		</P>
+		<P class="p45 ft6">
+			<SPAN class="ft6">C.</SPAN>
+			<SPAN class="ft7">On the Input Link format tab, specify a separator character in the dependent Null field value separator property and then use this separator to delimit the null values in the Null field value property. Click here to input option.</SPAN>
+		</P>
+		<P class="p46 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">On the Output Link format tab, specify a separator character in the dependent Null field value separator property and then use this separator to delimit the null values in the Null field value property.</SPAN>
+		</P>
+	</DIV>
+	<DIV id="page_6">
+		<P class="p47 ft4">Answer: D</P>
+		<P class="p34 ft0">Question: 16</P>
+		<P class="p6 ft1">Which three statements are true about File Sets? (Choose three.)</P>
+		<P class="p11 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">File sets are partitioned.</SPAN>
+		</P>
+		<P class="p3 ft6">
+			<SPAN class="ft6">B.</SPAN>
+			<SPAN class="ft7">File sets are readable by external applications.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">File sets always execute in parallel.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">File sets are stored as header file and data files.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">E.</SPAN>
+			<SPAN class="ft3">File sets have a proprietary data format which may change in future DataStage versions.</SPAN>
+		</P>
+		<P class="p48 ft4">Answer: A, B, D</P>
+		<P class="p32 ft0">Question: 17</P>
+		<P class="p21 ft1">Which two statements are true about the usage of scratch disk? (Choose two.)</P>
+		<P class="p2 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">The Sort stage always uses the scratch disk.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">You can define multiple scratch disk spaces to distribute disk l/0.</SPAN>
+		</P>
+		<P class="p49 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">If “buffer” scratch disk pool is defined, the framework uses this disk pool and the default disk pool.</SPAN>
+		</P>
+		<P class="p50 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">The parallel framework uses the disk space specified in the scratch disk setting to buffer virtual data set records.</SPAN>
+		</P>
+		<P class="p9 ft4">Answer: B, D</P>
+		<P class="p36 ft0">Question: 18</P>
+		<P class="p30 ft1">What two repositories does the Source Code Control Integration for DataStage and QualityStage serve? (Choose two.)</P>
+		<P class="p11 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Source Code Repository</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Universe Project Repository</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Information Analyzer Repository</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Information Server </SPAN>
+			<NOBR>meta-data</NOBR> Repository</P>
+		<P class="p51 ft4">Answer: A, D</P>
+	</DIV>
+	<DIV id="page_7">
+
+		<P class="p52 ft0">Question: 19</P>
+		<P class="p21 ft1">What are two ways to specify a stylesheet in an XML input stage? (Choose two.)</P>
+		<P class="p3 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">On the output link columns properties tab, type the styles heet in the XLST box.</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">On the output link advanced properties tab, type the stylesheet in the Stylesheet box.</SPAN>
+		</P>
+		<P class="p53 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">On the output link columns properties tab, identify an input column that contains the stylesheet URL.</SPAN>
+		</P>
+		<P class="p54 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">On the output link advanced properties tab, load the content or path of a stylesheet that is stored on the engine tier host.</SPAN>
+		</P>
+		<P class="p51 ft4">Answer: B, D</P>
+		<P class="p34 ft0">Question: 20</P>
+		<P class="p55 ft1">The given job processes large volumes of data using default partitioning, with sort/partition insertion enabled. Both source Data Sets are partitioned and sorted on the merge key. Assuming that the business logic allows all of the following actions, which design change would improve the performance of this job?</P>
+		<P class="p56 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Set the buffer mode to “no buffer” on the output links of both Data Sets.</SPAN>
+		</P>
+		<P class="p57 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Use the Data Set Management Utility to combine both input Data Sets into a single source Data Set.</SPAN>
+		</P>
+		<P class="p44 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Set the “Preserve Partitioning” option on both Data Sets and replace the Merge stage with a Sort Funnel stage.</SPAN>
+		</P>
+		<P class="p58 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Before each input to the Merge stage, insert a Sort stage with “Don’t Group, Previously Grouped” set on the merge key. Specify SAME partitioning on all inputs.</SPAN>
+		</P>
+		<P class="p4 ft4">Answer: D</P>
+		<P class="p36 ft0">Question: 21</P>
+	</DIV>
+	<DIV id="page_8">
+
+
+
+		<P class="p14 ft1">You are about to begin major changes to jobs in a project. You want to conveniently identify job changes on an ad hoc basis. What two tasks will allow you to identify changes to your jobs? (Choose two.)</P>
+		<P class="p11 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Import the original job from a .dsx export.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Select the job, then right click Compare within.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Select the job, then right click Cross Project Compare.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Before making a change to a job make a copy of the job in a different category folder.</SPAN>
+		</P>
+		<P class="p9 ft4">Answer: B, D</P>
+		<P class="p36 ft0">Question: 22</P>
+		<P class="p59 ft8">Records in a source file must be copied to multiple output streams for further processing. Which two conditions would require the use of a Transformer stage instead of a Copy stage? (Choose two.)</P>
+		<P class="p11 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Renaming one or more output columns.</SPAN>
+		</P>
+		<P class="p3 ft6">
+			<SPAN class="ft6">B.</SPAN>
+			<SPAN class="ft7">Concatenating data from multiple input columns.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Converting some input columns from integers to strings.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Directing selected output records down one output link rather than another.</SPAN>
+		</P>
+		<P class="p9 ft4">Answer: B, D</P>
+		<P class="p34 ft0">Question: 23</P>
+		<P class="p6 ft1">In which two operations can you create DataStage projects? (Choose two.)</P>
+		<P class="p7 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">During DataStage installation.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">When adding new projects from DataStage Administrator.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">When creating a project in the IBM Information Server Console.</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">When exporting and importing a DataStage project from DataStage Director.</SPAN>
+		</P>
+		<P class="p33 ft4">Answer: A, B</P>
+		<P class="p34 ft0">Question: 24</P>
+		<P class="p29 ft1">A customer requires that a single output file generated by a parallel job be created in sort order. Which two job designs would achieve this goal? (Choose two.)</P>
+		<P class="p2 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Insert a sorted Funnel stage before the input to the output SequentialFile stage.</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Specify both partition and sort key columns on the input to the target Seq uentialFile stage.</SPAN>
+		</P>
+	</DIV>
+	<DIV id="page_9">
+		<P class="p60 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Use a parallel sort and partition the input to the Seq uentialFile stage using a Sort Merge collector.</SPAN>
+		</P>
+		<P class="p61 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Set the “Execution Mode” in the Advanced stage properties tab of the parallel Sort stage to execute sequentially.</SPAN>
+		</P>
+		<P class="p62 ft1">
+			<SPAN class="ft1">E.</SPAN>
+			<SPAN class="ft3">Write the result to a parallel dataset, then write a shell script to convert the dataset records to text format, in sorted order.</SPAN>
+		</P>
+		<P class="p63 ft4">Answer: C, D</P>
+		<P class="p64 ft0">Question: 25</P>
+		<P class="p65 ft1">A job contains a Sort stage that sorts a large volume of data across a cluster of servers. Due to new requirements, the customer has requested that this sorting be done on a subset of servers identified in the configuration file to minimize impact on database nodes. The $APT_CONFIG_FILE shows no sort disk pool for any node. Which two steps will accomplish this? (Choose two.)</P>
+		<P class="p66 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Assign a separate config file just for the Sort stage.</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Have an appropriate node constraint within the Sort stage.</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Use the environment variable $APT_SCRATCH_SPACE_SORT_USAGE .</SPAN>
+		</P>
+		<P class="p60 ft6">
+			<SPAN class="ft6">D.</SPAN>
+			<SPAN class="ft7">Define a </SPAN>
+			<NOBR>non-default</NOBR> node pool with a subset of nodes in the parallel configuration file.</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">E.</SPAN>
+			<SPAN class="ft3">Create a sort scratch disk pool with a subset of nodes in the parallel configuration file.</SPAN>
+		</P>
+		<P class="p67 ft4">Answer: B, D</P>
+		<P class="p64 ft0">Question: 26</P>
+		<P class="p68 ft8">When you run a parallel job, any error messages and warnings are written to the job log and can be viewed from the Director client. What two levels of message handlers are there? (Choose two.)</P>
+		<P class="p69 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">stage level</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">job level</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">project level</SPAN>
+		</P>
+		<P class="p70 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">record level</SPAN>
+		</P>
+		<P class="p71 ft4">Answer: B, C</P>
+		<P class="p72 ft0">Question: 27</P>
+		<P class="p73 ft1">You have been asked to delete a shared container from the project by your customer. Before you do this you want to make sure it will not impact other objects in the project. How will you ensure that deleting the shared container will not cause a failure when jobs are recompiled?</P>
+	</DIV>
+	<DIV id="page_10">
+
+
+		<P class="p3 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Select the shared container, </SPAN>
+			<NOBR>Right-click</NOBR> on the Where used command.</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Select the shared container, </SPAN>
+			<NOBR>Right-click</NOBR> on the Where used (deep) command.</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Select the shared container, </SPAN>
+			<NOBR>Right-click</NOBR> on the Dependencies (deep) command.</P>
+		<P class="p74 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Advanced find, set Dependencies Of field equal to the container name, and Check the Option to Include nested results for Dependency searches.</SPAN>
+		</P>
+		<P class="p15 ft4">Answer: B</P>
+		<P class="p34 ft0">Question: 28</P>
+		<P class="p21 ft1">What are three valid join operations for the Join stage? (Choose three.)</P>
+		<P class="p2 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Inner Join</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Top outerjoin</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Left outer join</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Right outer join</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">E.</SPAN>
+			<SPAN class="ft3">Bottom innerjoin</SPAN>
+		</P>
+		<P class="p75 ft4">Answer: A, C, D</P>
+		<P class="p36 ft0">Question: 29</P>
+		<P class="p76 ft1">Input rows to a Transformer contain a product name field and a field with a list of colors the product can be ordered with. The colors are separated by the pipe character (I). Here is an example of an input row: “Shirt”I ....l“Red, Blue, Black”I... For each input row, you want to output multiple output rows, one for each color in the list. For the above example input row, three rows are to be output, one per color: “Shirt” ... “Red”, “Shirt” ... “Blue”, “Shirt” ... “Black”. Which three operations will you need to accomplish this? (Choose three.)</P>
+		<P class="p7 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Use the Count() function over the ColorList field to determine the number of loop iterations.</SPAN>
+		</P>
+		<P class="p77 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Use the LastRowlnGroup() function to determine when the last color in the color list has been processed.</SPAN>
+		</P>
+		<P class="p78 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Use the @ITERATION variable to determine which color in the ColorList field to extract using the Field function.</SPAN>
+		</P>
+		<P class="p79 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Specify the following loop condition: @ITERATION &lt;= n, where n is a stage variable initialized with number of loop iterations.</SPAN>
+		</P>
+		<P class="p80 ft1">LIE Use the SavelnputRecord() to save the input row for processing in the loop. Use the GetlnputRecord() to extract the row for each iteration of the loop.</P>
+		<P class="p81 ft4">Answer: A, C, D</P>
+	</DIV>
+	<DIV id="page_11">
+
+
+		<P class="p52 ft0">Question: 30</P>
+		<P class="p82 ft1">What is the correct method to process a file containing multiple record types using a Complex Flat File stage?</P>
+		<P class="p11 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft9">Manually break the file into multiple files by record type.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Define record definitions on the Constraints tab of the Complex Flat File stage.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Define record ID constraints on the Records ID tab of the Complex Flat File stage.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Use a Modify stage to convert the output array from the Complex Flat File to a subrecord.</SPAN>
+		</P>
+		<P class="p83 ft4">Answer: C</P>
+		<P class="p34 ft0">Question: 31</P>
+		<P class="p84 ft1">A job reads from a sequential file using a SequentialFile stage with option “number of readers” set to 2. This data goes to a Transformer stage and then is written to a dataset using the DataSet stage. The default configuration file has three nodes. The environment variable</P>
+		<P class="p85 ft1">$APT_DISABLE_COMBINATION is set to “True” and partitioning is set to “Auto”. How many processes will be created?</P>
+		<P class="p7 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">5</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">7</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">9</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">12</SPAN>
+		</P>
+		<P class="p15 ft4">Answer: C</P>
+		<P class="p34 ft0">Question: 32</P>
+		<P class="p86 ft1">You are working on a project that contains a large number of jobs contained in many folders. You would like to review the jobs created by the former developer of the project. How can you find these jobs?</P>
+		<P class="p11 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Filter jobs in Director Client’s Repository window.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Sort the jobs by date in the Repository window.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Use the Advanced Find feature contained in the Designer interface.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">While selecting the top folder in the project, choose Find Dependencies.</SPAN>
+		</P>
+		<P class="p15 ft4">Answer: C</P>
+		<P class="p36 ft0">Question: 33</P>
+	</DIV>
+	<DIV id="page_12">
+
+		<P class="p37 ft1">How are Shared Table definitions created from the DataStage Client?</P>
+		<P class="p2 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">This cannot be done from the DataStage Client</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Using the “Save” button on the “Table Properties” panel</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Using the “Save” button on the columns tab on the Stage/Link editor</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Using the “Shared Table Creation Wizard” from the DataStage Client.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">E.</SPAN>
+			<SPAN class="ft3">No need to, DataStage table definitions are automatically saved as shared metadata.</SPAN>
+		</P>
+		<P class="p4 ft4">Answer: D</P>
+		<P class="p87 ft0">Question: 34</P>
+		<P class="p88 ft1">DataStage offers database connectivity through connectors, native parallel and <NOBR>plug-in</NOBR> stage types. Which two statements are correct? (Choose two.)</P>
+		<P class="p11 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">ODBC API is a </SPAN>
+			<NOBR>plug-in</NOBR> stage.</P>
+		<P class="p3 ft6">
+			<SPAN class="ft6">B.</SPAN>
+			<SPAN class="ft7">Next to the connector stage it is best to use the native parallel database stages.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">The connector stage offers better functionality and performance and is the best to use.</SPAN>
+		</P>
+		<P class="p89 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">For maximum parallel performance, scalability, and features it is best to use the native parallel database stages.</SPAN>
+		</P>
+		<P class="p33 ft4">Answer: B, C</P>
+		<P class="p34 ft0">Question: 35</P>
+		<P class="p90 ft1">Which condition is required to use the LastRowlnGroup() function to determine a key break on a field?</P>
+		<P class="p91 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">The LastRowlnGroup() function requires the data to be grouped by the key field, but the data does not have to be sorted.</SPAN>
+		</P>
+		<P class="p92 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">The input data has to be sorted by the key field and DataStage must be able to detect that the data is sorted, for example, by the presence of a Sort stage.</SPAN>
+		</P>
+		<P class="p93 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">The LastRowlnGroup() function does not require the data to be either sorted or grouped by the key field. If necessary the LastRowlnGroup() function will perform a sort.</SPAN>
+		</P>
+		<P class="p94 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">The input data has to be sorted by the key field, but it is not required that DataStage be able to detect this. For example, the input data might be sorted before it is input to the job. (However, the job will abort at runtime if the data isn’t sorted.)</SPAN>
+		</P>
+		<P class="p83 ft4">Answer: B</P>
+	</DIV>
+	<DIV id="page_13">
+		<P class="p52 ft0">Question: 36</P>
+		<P class="p6 ft1">Which two statements are accurate regarding usage of database stages? (Choose two.)</P>
+		<P class="p11 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<NOBR>
+				<SPAN class="ft3">Plug-in</SPAN>
+			</NOBR> stages match columns by name.</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Native database stages match columns by name.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">DataStage provides native Oracle database stages.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Database stages cannot create tables and must be done externally.</SPAN>
+		</P>
+		<P class="p33 ft4">Answer: B, C</P>
+		<P class="p36 ft0">Question: 37</P>
+		<P class="p95 ft1">Records in a source file must be aggregated for further processing. Which two conditions would require the use of a Transformer stage instead of or in addition to an Aggregator stage? (Choose two.)</P>
+		<P class="p2 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">The data hasn’t been sorted or grouped.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">A global aggregation across all partitions is needed.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">The aggregation is a custom formula for your enterprise.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Aggregation results outside of a certain range need to be flagged as abnormal.</SPAN>
+		</P>
+		<P class="p28 ft4">Answer: C, D</P>
+		<P class="p34 ft0">Question: 38</P>
+		<P class="p6 ft1">What is the lowest CPU cost partitioning method?</P>
+		<P class="p7 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Hash</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Entire</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Random</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Round Robin</SPAN>
+		</P>
+		<P class="p4 ft4">Answer: D</P>
+		<P class="p34 ft0">Question: 39</P>
+		<P class="p96 ft1">You have been given operational requirements to introduce data recovery to one of your parallel job designs. Additionally, you have been told that you are to use flat files as your intermediate data structure. Which two tasks will accomplish these objectives? (Choose two.)</P>
+	</DIV>
+	<DIV id="page_14">
+
+		<P class="p3 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Use the Sequential stage to export and import data between jobs.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Enable checkpoint restartability in each of your parallel stages.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Break up the design by splitting it into at least two parallel jobs.</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Use the Hash File stage to write and read data between parallel jobs.</SPAN>
+		</P>
+		<P class="p9 ft4">Answer: A, C</P>
+		<P class="p34 ft0">Question: 40</P>
+		<P class="p21 ft1">What conditions are necessary for a master record and an update record to merge?</P>
+		<P class="p2 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">all of the columns in the input record match the columns in the update record</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">some of the columns in the input record match the columns in the update record</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">none of the columns in the input record match the columns in the update record</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">both records have the same values for the merge key column(s) that you specify</SPAN>
+		</P>
+		<P class="p4 ft4">Answer: D</P>
+		<P class="p34 ft0">Question: 41</P>
+		<P class="p21 ft1">How must the input data set be organized for input into the join stage? (Choose two.)</P>
+		<P class="p11 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Unsorted</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Key partitioned</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Hash partitioned</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Entire partitioned</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">E.</SPAN>
+			<SPAN class="ft3">Sorted in ascending order</SPAN>
+		</P>
+		<P class="p97 ft4">Answer: B, E</P>
+		<P class="p98 ft0">Question: 42</P>
+		<P class="p99 ft1">Which two partitioning methods require keys? (Choose two.)</P>
+		<P class="p3 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Hash</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Entire</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Modulus</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Round Robin</SPAN>
+		</P>
+		<P class="p9 ft4">Answer: A, C</P>
+	</DIV>
+	<DIV id="page_15">
+		<P class="p52 ft0">Question: 43</P>
+		<P class="p100 ft1">Which Information Server client application must be used to manage <NOBR>project-level</NOBR> roles for DataStage?</P>
+		<P class="p11 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Director client</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Designer client</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">WebSphere Information Services Director</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Web console for IBM Information Server</SPAN>
+		</P>
+		<P class="p101 ft4">Answer: D</P>
+		<P class="p34 ft0">Question: 44</P>
+		<P class="p102 ft1">A job needs to split a single Data Set into three Data Sets based on conditions that are supplied at runtime. Which stage would allow you to parameterize the conditions for splitting the in put data set?</P>
+		<P class="p7 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Filter stage</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Switch stage</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Transformer stage</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Split Vector stage</SPAN>
+		</P>
+		<P class="p15 ft4">Answer: A</P>
+		<P class="p34 ft0">Question: 45</P>
+		<P class="p103 ft1">When you configure a domain for source code integration a source control workspace is created. What are two reasons for the source control workspace? (Choose two.)</P>
+		<P class="p2 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">default directory for istool exports.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">directory for deployment package files</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">local transfer area for assets being submitted to the source control system</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">provides a place to store the archive created by IS source code control integration</SPAN>
+		</P>
+		<P class="p28 ft4">Answer: C, D</P>
+		<P class="p34 ft0">Question: 46</P>
+		<P class="p21 ft1">What stage allows for more than one reject link?</P>
+	</DIV>
+	<DIV id="page_16">
+		<P class="p3 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Peek stage</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Join stage</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Merge stage</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Lookup stage</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">E.</SPAN>
+			<SPAN class="ft3">Funnel stage</SPAN>
+		</P>
+		<P class="p15 ft4">Answer: C</P>
+		<P class="p34 ft0">Question: 47</P>
+		<P class="p104 ft1">Configuring the weighting column of an Aggregator stage affects which three options. (Choose three.)</P>
+		<P class="p2 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Sum</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Maximum Value</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Sum of Weights</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Corrected Sum of Squares</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">E.</SPAN>
+			<SPAN class="ft3">Percent Coefficient of Variation</SPAN>
+		</P>
+		<P class="p105 ft4">Answer: A, C, E</P>
+		<P class="p36 ft0">Question: 48</P>
+		<P class="p6 ft1">Click on the Exhibit button.</P>
+	</DIV>
+	<DIV id="page_17">
+		<P class="p106 ft1">Provided you have enough system resources, what is the maximum number of jobs that could be running concurrently in this image?</P>
+		<P class="p2 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">2</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">3</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">4</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">5</SPAN>
+		</P>
+		<P class="p15 ft4">Answer: B</P>
+		<P class="p34 ft0">Question: 49</P>
+		<P class="p86 ft1">A client has multiple servers connected with a high bandwidth switch and has installed DataStage on one of them. There are five files (with the same record layout) that must be retrieved from three other servers using FTP. Which approach will retrieve and process all five files in the minimal amount of time?</P>
+		<P class="p107 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Use a single FTP Enterprise stage and specify five URI properties (one for each file). Next, process the records without landing to disk.</SPAN>
+		</P>
+		<P class="p108 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">In a single job, use five separate FTP Enterprise stages with output links to a single Sort Funnel stage. Next, process the records without</SPAN>
+		</P>
+		<P class="p3 ft1">landing to disk.</P>
+		<P class="p44 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">In a single job, use three separate FTP Enterprise stages (one for each machine) with output links to a single Sort Funnel stage. Next, process</SPAN>
+		</P>
+	</DIV>
+	<DIV id="page_18">
+
+
+		<P class="p37 ft1">the records without landing to disk.</P>
+		<P class="p109 ft1">D. Create a sequence containing five separate DataStage jobs which each retrieve a single file and append it to a common Data Set. Next,</P>
+		<P class="p110 ft1">process the resulting Data Set in an sixth DataStage job.</P>
+		<P class="p15 ft4">Answer: A</P>
+		<P class="p34 ft0">Question: 50</P>
+		<P class="p111 ft1">You are responsible for deploying objects into your customers production environment. To ensure the stability of the production system the customer does not permit compilers on production machines. They have also protected the project and only development machines have the required compiler. What two options will allow jobs with a parallel transformer to execute in the customers production machines? (Choose two.)</P>
+		<P class="p11 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Add $APT_COMPILE_OPTh=portable</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Set $APT_COPY_TRANSFORM_OPERATOR</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Export the jobs with Information Server Manager with the executables.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Create a package with Information Server Manager and select the option to include executables.</SPAN>
+		</P>
+		<P class="p112 ft4">Answer: C, D</P>
+		<P class="p34 ft0">Question: 51</P>
+		<P class="p6 ft1">In a file defining a partial schema, which three properties define the record? (Choose three.)</P>
+		<P class="p7 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">text</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">delim</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">intact</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">record_length</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">E.</SPAN>
+			<SPAN class="ft3">record_delim_string</SPAN>
+		</P>
+		<P class="p48 ft4">Answer: C, D, E</P>
+		<P class="p34 ft0">Question: 52</P>
+		<P class="p113 ft1">You are asked to identify the jobs and shared containers that use the ADDRESS column. The Size has changed from 50 to 120 characters in the source system so the jobs must be updated with the new size. What feature of the Designer will locate where a column is used in a DataStage project?</P>
+	</DIV>
+	<DIV id="page_19">
+		<P class="p114 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Open the Table Definition properties, Select the ADDRESS column, then right click and select Find where used.</SPAN>
+		</P>
+		<P class="p115 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Select a Table Definition, then right click and choose Find where column Is used. Select the column to search for from the list.</SPAN>
+		</P>
+		<P class="p116 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">From Designer Tools open an Advanced Find dialog. Select Columns from the Type list and enter the column name in the Name To Find field.</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">From Designer Tools, open an Advanced Find dialog. Enter the column name in the Name</SPAN>
+		</P>
+		<P class="p73 ft1">to find field. Select Jobs and Shared Containers from the Type to find list.</P>
+		<P class="p117 ft4">Answer: C</P>
+		<P class="p118 ft0">Question: 53</P>
+		<P class="p119 ft1">In the exhibit, a Funnel stage has two input links. Input I (Seqjile) comes from a SequentialFile with “Readers per Node’ set to “2’. Input 2 (Dataset) comes from a dataset created wIth 3 partitions. With the Funnel stage, the funnel type is set to “Sequence”. The parallel configuration tile contarns three nodes.</P>
+		<P class="p120 ft1">How many instances of the Funnel stage run in parallel?</P>
+		<P class="p60 ft6">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft7">l</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">2</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">3</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">6</SPAN>
+		</P>
+		<P class="p117 ft4">Answer: C</P>
+		<P class="p64 ft0">Question: 54</P>
+		<P class="p121 ft1">In a Transformer Stage you have a nullable input column that is mapped to a <NOBR>non-nullable</NOBR> output column. What two techniques can be used to handle NULL values? (Choose two.)</P>
+		<P class="p73 ft1">A. NullToValue(lnput_column, ‘unknown’).</P>
+	</DIV>
+	<DIV id="page_20">
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">IF input_column = * THEN ‘unknown’ ELSE input_column.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">IF input_column = NULL THEN ‘unknown’ ELSE input_column.</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">IF IsNULL(input_column) THEN ‘unknown ELSE input_column.</SPAN>
+		</P>
+		<P class="p9 ft4">Answer: A, D</P>
+		<P class="p34 ft0">Question: 55</P>
+		<P class="p21 ft1">Which three of the following are valid schema formats? (Choose three.)</P>
+		<P class="p2 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Raw Columns</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Total Columns</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Decimal Columns</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Integer Columns</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">E.</SPAN>
+			<SPAN class="ft3">Aggregator Columns</SPAN>
+		</P>
+		<P class="p75 ft4">Answer: A, C, D</P>
+		<P class="p34 ft0">Question: 56</P>
+		<P class="p122 ft1">Which two steps are required to change from a normal lookup to a sparse lookup in an ODBC Enterprise stage? (Choose two.)</P>
+		<P class="p11 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Sort the data on the reference link.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Change the lookup option in the stage properties to “Sparse”.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Replace columns at the beginning of a SELECT statement with a wildcardasterisk(*)•</SPAN>
+		</P>
+		<P class="p123 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Establish a relationship between the key field column in the source stage with the database table field.</SPAN>
+		</P>
+		<P class="p51 ft4">Answer: B, D</P>
+		<P class="p34 ft0">Question: 57</P>
+		<P class="p88 ft1">The DB2 and Oracle Enterprise stages support logged and <NOBR>non-logged</NOBR> DBMS table operations What is the <NOBR>non-logged</NOBR> operation that is supported by the DB2 and Oracle Enterprise stages?</P>
+		<P class="p2 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Load</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Delete</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Update</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Insert</SPAN>
+		</P>
+	</DIV>
+	<DIV id="page_21">
+		<P class="p31 ft4">Answer: A</P>
+		<P class="p34 ft0">Question: 58</P>
+		<P class="p124 ft1">Which three methods can be used to import metadata from a Web Services Description Language (WSDL) document? (Choose three.)</P>
+		<P class="p2 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">XML Table Definitions</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Web Services WSDL Definitions</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Orchestrate Schema Definitions</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Web Service Function Definitions</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">E.</SPAN>
+			<SPAN class="ft3">Job Stage Column tab properties entered using ‘Load” feature</SPAN>
+		</P>
+		<P class="p48 ft4">Answer: A, B, D</P>
+		<P class="p34 ft0">Question: 59</P>
+		<P class="p21 ft1">Which three of the following are valid options for the dsjob command? (Choose three.)</P>
+		<P class="p2 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Stopping a job</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Compiling a job</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Purging log files</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Accessing log files</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">E.</SPAN>
+			<SPAN class="ft3">Setting an alias for a job</SPAN>
+		</P>
+		<P class="p48 ft4">Answer: A, D, E</P>
+		<P class="p34 ft0">Question: 60</P>
+		<P class="p21 ft1">Which two features of Data Sets make them suitable for job restart points? (Choose two.)</P>
+		<P class="p2 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">They are persistent.</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">They are indexed to improve access.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">They are compressed to minimize storage space.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">They use the same data types as the parallel framework.</SPAN>
+		</P>
+		<P class="p9 ft4">Answer: A, D</P>
+		<P class="p87 ft0">Question: 61</P>
+	</DIV>
+	<DIV id="page_22">
+		<P class="p125 ft1">Which two data repositories can you use for user authentication within the Information Server Suite? (Choose two.)</P>
+		<P class="p11 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">the IBM Metadata repository</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">the local operating system directory</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">the IBM Information Server user directory</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">the IBM Suite User Configuration file specified within the dsenv file</SPAN>
+		</P>
+		<P class="p33 ft4">Answer: B, C</P>
+		<P class="p36 ft0">Question: 62</P>
+		<P class="p6 ft1">Which two properties can be set to read a fixed width sequential file in parallel? (Choose two.)</P>
+		<P class="p11 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Set Read Method to “File Pattern”.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Set the Execution mode to “Parallel”.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Set the “Read from Multiple Nodes” optional property to a value greater than 1.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Set the “Number of Readers Per Node” optional property to a value greater than 1.</SPAN>
+		</P>
+		<P class="p126 ft4">Answer: C, D</P>
+		<P class="p34 ft0">Question: 63</P>
+		<P class="p6 ft1">Which of the following is not an ODBC connector property?</P>
+		<P class="p2 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Username</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Password</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Data source</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Remote server</SPAN>
+		</P>
+		<P class="p4 ft4">Answer: D</P>
+		<P class="p34 ft0">Question: 64</P>
+		<P class="p127 ft1">To better understand the data flowing through a job, it is desirable to have structural information about the datasets captured in the job log. Which environment variable can provide this information?</P>
+		<P class="p7 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">$OSH_STDOUT_MSG</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">$OSH_PRINT_SCHEMAS</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">$APT_PM_PLAYER_M EMORY</SPAN>
+		</P>
+	</DIV>
+	<DIV id="page_23">
+
+		<P class="p37 ft1">D. $APT_NO_PART_INSERTION</P>
+		<P class="p15 ft4">Answer: B</P>
+		<P class="p34 ft0">Question: 65</P>
+		<P class="p6 ft1">How is Runtime Column Propagation (RCP) enabled for use in DataStage Jobs?</P>
+		<P class="p7 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Use the Info Server web console to enable RCP</SPAN>
+		</P>
+		<P class="p128 ft8">B. Set the APT_ENABLE_RCP environment variable to TRUE . C . RCP is by default available for all DataStage Projects.</P>
+		<P class="p3 ft1">D. Use RCP definition wizard to initialize RCP for project use.</P>
+		<P class="p27 ft1">E. Use the DataStage Administrator to enable RCP for the project.</P>
+		<P class="p129 ft4">Answer: E</P>
+		<P class="p34 ft0">Question: 66</P>
+		<P class="p35 ft1">What two stages are required to place Header and Detail records, which have different formats, into a single format? (Choose two.)</P>
+		<P class="p2 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Funnel Stage</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Combine Stage</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Column Export Stage</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Column Import Stage</SPAN>
+		</P>
+		<P class="p9 ft4">Answer: A, C</P>
+		<P class="p36 ft0">Question: 67</P>
+		<P class="p6 ft1">What three element Names are required to create Shared metadata? (Choose three.)</P>
+		<P class="p11 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Schema</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Database</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Project Name</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Host System</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">E.</SPAN>
+			<SPAN class="ft3">Database Instance</SPAN>
+		</P>
+		<P class="p130 ft4">Answer: A, B, D</P>
+	</DIV>
+	<DIV id="page_24">
+		<P class="p131 ft0">Question: 68</P>
+		<P class="p132 ft1">You write a job control routine to control a sequence of jobs running as a single unit of work. What are three valid job status types you can trap for? (Choose three.)</P>
+		<P class="p66 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">DSJS.START</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">DSJS.RUNOK</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">DSJS.STOPPED</SPAN>
+		</P>
+		<P class="p60 ft6">
+			<SPAN class="ft6">D.</SPAN>
+			<SPAN class="ft7">DSJS.RUNERROR</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">E.</SPAN>
+			<SPAN class="ft3">DSJS.RUNFAILED</SPAN>
+		</P>
+		<P class="p133 ft4">Answer: B, C, E</P>
+		<P class="p64 ft0">Question: 69</P>
+		<P class="p134 ft1">Which of the following describes what happens when Runtime Column Propagation is enabled?</P>
+		<P class="p135 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">An inputcolumn valueflows intoatargetcolumn only if it matches it by name.</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">An input column value flows into a target column only if it is explicitly mapped to it.</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">An input column value flows into a target column based on its position in a Schema file.</SPAN>
+		</P>
+		<P class="p136 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">An input column value flows into a target column based on its position in the input row. For example, first column in the input row goes into the first target column.</SPAN>
+		</P>
+		<P class="p117 ft4">Answer: A</P>
+		<P class="p64 ft0">Question: 70</P>
+		<P class="p137 ft1">What role must a user have to delete shared metadata assets from the repository?</P>
+		<P class="p135 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Common Metadata User</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">DataStage Administrator</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Information Analyzer User</SPAN>
+		</P>
+		<P class="p70 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Common Metadata Administrator</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">E.</SPAN>
+			<SPAN class="ft3">Business Glossary Administrator</SPAN>
+		</P>
+		<P class="p138 ft4">Answer: D</P>
+		<P class="p64 ft0">Question: 71</P>
+		<P class="p73 ft1">Which two statements are true about DataStage Parallel Build stages? (Choose two.)</P>
+	</DIV>
+	<DIV id="page_25">
+		<P class="p3 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Build stages can only be used in a job that has Runtime Column Propagation (RCP) enabled.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">The Build stage generates a CIC++ source file that is compiled and linked outside of DataStag e.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">On the Logic </SPAN>
+			<NOBR>Post-Loop,</NOBR> you specify code that runs after all input records have been processed.</P>
+		<P class="p139 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">The Build stage can be programmed to read and write automatically or code can be written to manually read and write rows.</SPAN>
+		</P>
+		<P class="p28 ft4">Answer: C, D</P>
+		<P class="p34 ft0">Question: 72</P>
+		<P class="p140 ft1">In the job fragment shown in the exhibit, the data going into the target Sequential File stage needs to be sorted by postal code. The Sort stage accomplishes this by running in Sequential mode and sorting by postal code. You have been asked to improve the performance of the job with a <NOBR>4-node</NOBR> configuration file.</P>
+		<P class="p141 ft1">Which two changes will improve the performance of the job? (Choose two.)</P>
+		<P class="p11 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft9">Move the Sort stage in front of the Filter stage, so that the sort is performed earlier in the job.</SPAN>
+		</P>
+		<P class="p142 ft6">
+			<SPAN class="ft6">B.</SPAN>
+			<SPAN class="ft7">Add a second Sort stage just before the existing Sort stage; run the new stage in parallel mode sorting by postal code.</SPAN>
+		</P>
+		<P class="p57 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Change the mode of the existing Sort stage to parallel mode; continue to sort by postal code. In the target Sequential File stage choose the SortMerge collector.</SPAN>
+		</P>
+		<P class="p58 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Eliminate the existing Sort stage; define an </SPAN>
+			<NOBR>in-stage</NOBR> sort in the Filter stage, sorting by postal code. In the target Sequential File stage choose the SortMerge collector.</P>
+		<P class="p28 ft4">Answer: C, D</P>
+		<P class="p34 ft0">Question: 73</P>
+	</DIV>
+	<DIV id="page_26">
+		<P class="p37 ft1">Click the Exhibit button.</P>
+		<P class="p143 ft1">These three Sequential Files shown in the exhibit need to be joined. Join_I is on Columns CustID and OrderlD. Join_2 is on CustID and LocationlD . What is the most efficient hash partitioning strategy for each link?</P>
+		<P class="p144 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">For LinkA Hash Partition on CustiD; For LinkB Hash Partition on CustiD; For LinkC Same Partition;</SPAN>
+		</P>
+		<P class="p3 ft6">For LinkD Hash Partition on CustiD .</P>
+		<P class="p145 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">For LinkA Hash Partition on OrderiD and CustiD; For LinkB Hash Partition on OrderiD and CustiD; For LinkC Hash Partition on LocationiD and CustiD; For LinkD Hash Partition on LocationiD and CustiD .</SPAN>
+		</P>
+		<P class="p146 ft2">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft10">For LinkA Hash Partition on CustiD and OrderiD; For LinkB Hash Partition on CustiD and OrderiD; For LinkC Hash Partition on CustiD and LocationiD; For LinkD Hash Partition on CustiD and LocationiD.</SPAN>
+		</P>
+		<P class="p147 ft8">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft11">For LinkA Hash Partition on CustiD, OrderiD and LocationiD; For LinkB Hash Partition on CustiD, OrderiD and LocationiD; For LinkC Hash Partition on CustiD, OrderiD and LocationiD; For LinkD Hash Partition on CustiD, OrderiD and LocationiD .</SPAN>
+		</P>
+		<P class="p148 ft4">Answer: A</P>
+		<P class="p34 ft0">Question: 74</P>
+		<P class="p149 ft1">You have a dataset <NOBR>hash-partitioned</NOBR> and sorted on CustiD . You need to create a Sequential File sorted on CustID from this dataset. Which technique is the most appropriate?</P>
+		<P class="p7 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Use Copy stage.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Use SortMerge collector for the Sequential File input link.</SPAN>
+		</P>
+		<P class="p150 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Insert Sort stage before the final Sequential File stage and use Ordered collector for the Sequential File stage input link.</SPAN>
+		</P>
+	</DIV>
+	<DIV id="page_27">
+		<P class="p125 ft1">D. Insert Sort stage before the final Sequential File stage and use Round Robin collector for the Sequential File stage input</P>
+		<P class="p110 ft1">link.</P>
+		<P class="p15 ft4">Answer: B</P>
+		<P class="p34 ft0">Question: 75</P>
+		<P class="p151 ft1">A job validates credit card numbers with a reference file using a Join stage, which is hash partitioned by card number. Examination of Job Monitor reveals that some partitions process many more rows than others. Assuming adequate hardware resources, which action can be used to improve the performance of the job?</P>
+		<P class="p2 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Replace the Join with a Merge stage.</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Break the input file into multiple files.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Alter the number of partitions in the $APT_CONFIG_FILE .</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Use Round Robin partitioning on the stream and Entire partitioning on the reference.</SPAN>
+		</P>
+		<P class="p15 ft4">Answer: C</P>
+		<P class="p87 ft0">Question: 76</P>
+		<P class="p6 ft1">What are two advantages of using Runtime Column Propagation (RCP)? (Choose two.)</P>
+		<P class="p11 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">RCP is not a feature of DataStage.</SPAN>
+		</P>
+		<P class="p3 ft6">
+			<SPAN class="ft6">B.</SPAN>
+			<SPAN class="ft7">Only columns used in the data flow need to be defined.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Only columns that are defined as VarChar need RCP enabled.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Sequential files don’t require schema files when using RCP.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">E.</SPAN>
+			<SPAN class="ft3">Columns not specifically used in the flow are propagated as if they were.</SPAN>
+		</P>
+		<P class="p97 ft4">Answer: B, E</P>
+		<P class="p34 ft0">Question: 77</P>
+		<P class="p152 ft1">Which two property areas must be configured when using the ODBC connector stage as a target in your job design? (Choose two.)</P>
+		<P class="p7 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Define columns for the output link.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Specify the remote server property.</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Specify properties for the input link.</SPAN>
+		</P>
+	</DIV>
+	<DIV id="page_28">
+		<P class="p37 ft1">D. Define the connection properties to an ODBC data source.</P>
+		<P class="p28 ft4">Answer: C, D</P>
+		<P class="p34 ft0">Question: 78</P>
+		<P class="p153 ft1">A customer requires reading a <NOBR>fixed-length</NOBR> sequential file in parallel where input rows can be identified. What two tasks must be done to meet these requirements? (Choose two.)</P>
+		<P class="p7 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Set partitioning method to Same.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Specify Multiple readers per node.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Set $APT_READ_MULTI_NODES to TRUE .</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Ensure data has unique identifiers for data rows.</SPAN>
+		</P>
+		<P class="p9 ft4">Answer: B, D</P>
+		<P class="p34 ft0">Question: 79</P>
+		<P class="p21 ft1">Which three of the following options does the dsjob command have? (Choose three.)</P>
+		<P class="p2 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Stopping a job</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Setting an alias for a job</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Specifying an appropriate log file</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Listing projects, jobs, stages, links, and parameters</SPAN>
+		</P>
+		<P class="p48 ft4">Answer: A, B, D</P>
+		<P class="p34 ft0">Question: 80</P>
+		<P class="p21 ft1">Which two statements are correct about XML stages and their usage? (Choose two.)</P>
+		<P class="p2 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">XML In put stage converts XML data to hierarchical format.</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">XML Input stage transforms hierarchical XSLT data to tabular format.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">XML Transformer stage converts an XML document to another XML hierarchical format.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">XML Output stage converts relational tables and sequential files to XML hierarchical structures.</SPAN>
+		</P>
+		<P class="p28 ft4">Answer: C, D</P>
+		<P class="p36 ft0">Question: 81</P>
+	</DIV>
+	<DIV id="page_29">
+		<P class="p154 ft1">A DataStage job uses an Inner Join to combine data from two source parallel datasets that were written to disk in sort order based on the join key columns. Which two methods could be used to dramatically improve performance of this job? (Choose two.)</P>
+		<P class="p11 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Disable job monitoring.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Set the environment variable $APT_SORT_INSERTION_CHECK_ONLY.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Unset the Preserve Partitioning flag on the output of each parallel dataset.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Explicitly specify hash partitioning and sorting on each input to the Join stage.</SPAN>
+		</P>
+		<P class="p155 ft1">
+			<SPAN class="ft1">E.</SPAN>
+			<SPAN class="ft3">Add a parallel sort stage before each Join input, specifying the “Don’t Sort, Previously Grouped” sort key mode for each key.</SPAN>
+		</P>
+		<P class="p156 ft4">Answer: B, E</P>
+		<P class="p34 ft0">Question: 82</P>
+		<P class="p6 ft1">Where are project level message handlers defined?</P>
+		<P class="p11 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">DSENV</SPAN>
+		</P>
+		<P class="p3 ft6">
+			<SPAN class="ft6">B.</SPAN>
+			<SPAN class="ft7">Director Client</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Designer Client</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Administrator Client</SPAN>
+		</P>
+		<P class="p4 ft4">Answer: D</P>
+		<P class="p34 ft0">Question: 83</P>
+		<P class="p6 ft1">Which two statements are true regarding access to a MQ queue? (Choose two.)</P>
+		<P class="p7 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft9">MQ stage connects to a queue manager in Client mode only.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">MQ stage and MQ connector stages support destructive reads.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">MQ plugin stage can be used to read and write messages from a remote MQ message queue.</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">MQ connector stage is capable of connecting to Queue manager in both Server and Client mode.</SPAN>
+		</P>
+		<P class="p9 ft4">Answer: B, D</P>
+		<P class="p34 ft0">Question: 84</P>
+	</DIV>
+	<DIV id="page_30">
+		<P class="p37 ft1">Click the exhibit button.</P>
+		<P class="p157 ft1">You submit a job from DataStage Director and then log onto your DataStage Linux server to issue the command ‘ps <NOBR>-ef</NOBR> I grep ds” and receive the following screen: Which process is a player?</P>
+		<P class="p7 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">7117</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">7215</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">7216</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">7217</SPAN>
+		</P>
+		<P class="p4 ft4">Answer: D</P>
+		<P class="p34 ft0">Question: 85</P>
+		<P class="p21 ft1">What Information Server tool provides integration with source code control repositories?</P>
+		<P class="p2 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">DataStage Designer</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Multiple Job Compile</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Information Server Manager</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Information Services Director</SPAN>
+		</P>
+		<P class="p15 ft4">Answer: C</P>
+		<P class="p34 ft0">Question: 86</P>
+		<P class="p158 ft1">You found there were common functional requirements in the data mapping specification. The required functions are same but the record formats are different. Which action will allow you to effectively implement common logic?</P>
+	</DIV>
+	<DIV id="page_31">
+		<P class="p60 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Create parallel routines.</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Create separate jobs and choose appropriate job within a job sequence.</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Create parallel shared containers and define columns combining all data formats.</SPAN>
+		</P>
+		<P class="p159 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Create parallel shared containers with Runtime Column Propagation (RCP) ON and define only necessary columns needed for the logic.</SPAN>
+		</P>
+		<P class="p138 ft4">Answer: D</P>
+		<P class="p72 ft0">Question: 87</P>
+		<P class="p137 ft1">Which statement is true about the Web Services Pack?</P>
+		<P class="p135 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Web Services Pack generates a WSDL.</SPAN>
+		</P>
+		<P class="p70 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Web Services Pack makes a service request using SOAP.</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Web Services Pack communicates by Enterprise Java Beans.</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Web Services Pack is configured from within the Information Services Director application.</SPAN>
+		</P>
+		<P class="p117 ft4">Answer: B</P>
+		<P class="p118 ft0">Question: 88</P>
+		<P class="p160 ft1">The purchase history record contains CustID, ProductiD, ProductType and TotalAmount. You need to retain the record of greatest TotalAmount per CustiD and ProductType using RemoveDuplicate stage. Which two statements accomplish this requirement? (Choose two.)</P>
+		<P class="p161 ft1">A. <NOBR>Hash-partition</NOBR> on CustiD;</P>
+		<P class="p73 ft1">Sort on CustiD, Prod uctType and TotalAmount.</P>
+		<P class="p73 ft1">B. <NOBR>Hash-partition</NOBR> on ProductType;</P>
+		<P class="p73 ft1">Sort on ProductType, CustiD and TotalAmount.</P>
+		<P class="p162 ft2">
+			<SPAN class="ft1">C.</SPAN>
+			<NOBR>
+				<SPAN class="ft10">Hash-partition</SPAN>
+			</NOBR> on CustiD and ProductType; Sort on CustiD, Prod uctType and TotalAmount.</P>
+		<P class="p163 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<NOBR>
+				<SPAN class="ft3">Hash-partition</SPAN>
+			</NOBR> on CustiD, ProductType and TotalAmount; Sort on CustiD, ProductType and TotalAmount.</P>
+		<P class="p67 ft4">Answer: A, C</P>
+		<P class="p64 ft0">Question: 89</P>
+		<P class="p73 ft1">If you do not alter any of the Format settings, the Sequential File stage will produce a file with what three types of format? (Choose three.)</P>
+
+	</DIV>
+	<DIV id="page_32">
+
+		<P class="p3 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Rows are delimited by a DOS newline.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Rows are delimited by a UNIX newline.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">All columns are delimited by a comma.</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Variable length columns are contained within double quotes.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">E.</SPAN>
+			<SPAN class="ft3">All columns are delimited by a comma, except for the final column in a row.</SPAN>
+		</P>
+		<P class="p48 ft4">Answer: B, D, E</P>
+		<P class="p34 ft0">Question: 90</P>
+		<P class="p164 ft1">A job design consists of an input sequential file, a Modify stage, followed by a Filter stage and an output SequentialFile stage. The job is run on an SMP machine with a configuration file defined with three nodes. No environment variables were set for the job. How many osh processes will this job create?</P>
+		<P class="p11 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">8</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">9</SPAN>
+		</P>
+		<P class="p3 ft6">
+			<SPAN class="ft6">C.</SPAN>
+			<SPAN class="ft7">11</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">16</SPAN>
+		</P>
+		<P class="p165 ft4">Answer: B</P>
+		<P class="p34 ft0">Question: 91</P>
+		<P class="p166 ft1">Which option is required to identify a particular job player processes?Which option is required to identify a particular job? player processes?</P>
+		<P class="p7 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Set $APT_DUMP_SCORE to true.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Set $APT_PM_SHOW_PIDS to true.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Log onto the server and issue the command “ps </SPAN>
+			<NOBR>-ef</NOBR> I grep ds”.</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Use the DataStage Director Job administration screen to display active player processes.</SPAN>
+		</P>
+		<P class="p15 ft4">Answer: B</P>
+		<P class="p34 ft0">Question: 92</P>
+		<P class="p167 ft5">You are processing groups of rows in a Transformer. The first row in each group contains “1” in the Flag column and “0” in the remaining rows of the group. At the end of each group you want to sum and output the QTY column values. Which three techniques will enable you to retrieve the sum of</P>
+	</DIV>
+	<DIV id="page_33">
+		<P class="p73 ft1">the last group? (Choose three.)</P>
+		<P class="p168 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Output the sum that you generated each time you process a row for which the LastRow() function returns True.</SPAN>
+		</P>
+		<P class="p169 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Output the sum that you generated up to the previous row each time you process a row with a “1” in the Flag column.</SPAN>
+		</P>
+		<P class="p170 ft1">C. Within each group sort the Flag column in ascending order. Output the sum each time you process the row with a “1” in the Flag column.</P>
+		<P class="p171 ft6">
+			<SPAN class="ft6">D.</SPAN>
+			<SPAN class="ft7">Output a running total for each group for each row. Follow the Transformer stage by an Aggregator stage. Take the MAX of the QTY column for each group.</SPAN>
+		</P>
+		<P class="p172 ft1">
+			<SPAN class="ft1">E.</SPAN>
+			<SPAN class="ft3">Output the sum that you generated up to the previous row each time you process a row with a “1” in the Flag column. Use the LastRow() function to determine when the last group is done.</SPAN>
+		</P>
+		<P class="p173 ft4">Answer: C, D, E</P>
+		<P class="p64 ft0">Question: 93</P>
+		<P class="p134 ft1">Click the Exhibit button.</P>
+		<P class="p174 ft1">The job in the exhibit runs to successful completion with no warnings. However, a validation test identifies that the CUSTOMER_MASTER table is empty. You suspect the cause to be related to the NEW_CUSTOMERS table or a defect in the job. Examining runtime <NOBR>meta-data</NOBR> will help you track down the problem. Which two product features will help you isolate the cause of the problem? (Choose two.)</P>
+		<P class="p69 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">$APT_PM_PLAYER_STATS</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Job Monitor Tool in the Director Client</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Show Performance Statistics in the Designer.</SPAN>
+		</P>
+		<P class="p70 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Use job run operational </SPAN>
+			<NOBR>meta-data</NOBR> reports from IS Manager.</P>
+		<P class="p73 ft4">Answer: B, C</P>
+	</DIV>
+	<DIV id="page_34">
+		<P class="p52 ft0">Question: 94</P>
+		<P class="p76 ft1">You are using the Change Capture stage in your job design to identify changes made to the input link (before image) to obtain the results in the output link. This job will be using a <NOBR>multi-node</NOBR> configuration file when executed. By default, the Change Capture stage produces an output change link with which two characteristics? (Choose two.)</P>
+		<P class="p2 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">added column named Change_Code</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">added column named Difference_Value</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Table Definition based on the after input link</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Table Definition based on the keys of the input link</SPAN>
+		</P>
+		<P class="p9 ft4">Answer: A, C</P>
+		<P class="p34 ft0">Question: 95</P>
+		<P class="p6 ft1">The number of File Set data files created depends upon what three items? (Choose three.)</P>
+		<P class="p7 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Schema definition of the file.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">File system limitations.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Number of physical processing nodes.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Number of processing nodes in the default node pool.</SPAN>
+		</P>
+		<P class="p175 ft1">
+			<SPAN class="ft1">E.</SPAN>
+			<SPAN class="ft3">Number of disks in the export or default disk pool connected to each processing node in the default node pool</SPAN>
+		</P>
+		<P class="p48 ft4">Answer: B, D, E</P>
+		<P class="p87 ft0">Question: 96</P>
+		<P class="p6 ft1">Which environment variable determines where the temporary scores are stored?</P>
+		<P class="p11 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">APT_JOB_MON</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">APT_HIGH_SCORE</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">APT_DUMP_SCORE</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">APT_SAVE_SCORE</SPAN>
+		</P>
+		<P class="p4 ft4">Answer: D</P>
+		<P class="p36 ft0">Question: 97</P>
+	</DIV>
+	<DIV id="page_35">
+
+
+		<P class="p176 ft1">Your job sequence must be restartable. It runs Job1, Job2, and Job3 serially. It has been compiled with “Add checkpoints so sequence is restartable”. Job1 must execute every run even after a failure. Which two properties must be selected to ensure that Job1 is run each time, even after a failure? (Choose two.)</P>
+		<P class="p11 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Set the Job1 Activity stage to “Do not checkpoint run.”.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Set trigger on the Job1 Activity stage to “Unconditional”.</SPAN>
+		</P>
+		<P class="p3 ft6">
+			<SPAN class="ft6">C.</SPAN>
+			<SPAN class="ft7">In the Job1 Activity stage set the Execution action to “Reset if required, then run.”.</SPAN>
+		</P>
+		<P class="p177 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Use the Nested Condition Activity with a trigger leading to Job1; set the trigger expression type to “Unconditional”.</SPAN>
+		</P>
+		<P class="p9 ft4">Answer: A, C</P>
+		<P class="p34 ft0">Question: 98</P>
+		<P class="p178 ft1">You need to find the differences between the jobs in the Test project and theit older version in the Production project. You discover that the Production project is on another domain. What feature would find the differences in a job that is in a project on a different domain?</P>
+		<P class="p7 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Cross Domain Compare</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Cross Project Compare</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">DataStage Version Control</SPAN>
+		</P>
+		<P class="p179 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Export from the other domain and import into a project in the same domain as the one you are working in.</SPAN>
+		</P>
+		<P class="p15 ft4">Answer: B</P>
+		<P class="p34 ft0">Question: 99</P>
+		<P class="p21 ft1">Which Oracle Enterprise stage read property can be set using <NOBR>-dboptions</NOBR> to tune job performance?</P>
+		<P class="p2 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">memsize</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">arraysize</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">transactsize</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">partitionsize</SPAN>
+		</P>
+		<P class="p15 ft4">Answer: B</P>
+		<P class="p118 ft0">Question: 100</P>
+	</DIV>
+	<DIV id="page_36">
+
+		<P class="p180 ft1">In a Transformer expression for a stage variable, there is a nullable input column. What happens when a row is processed that contains NULL in that input column?</P>
+		<P class="p135 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">The job aborts.</SPAN>
+		</P>
+		<P class="p70 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">The row is rejected.</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">NULL is written to the stage variable.</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">The value written to the stage variable is undetermined.</SPAN>
+		</P>
+		<P class="p117 ft4">Answer: C</P>
+		<P class="p181 ft0">Question: 101</P>
+		<P class="p134 ft1">Which statement is true about buffering?</P>
+		<P class="p66 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">The buffer operator uses both memory and disk storage.</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">The framework uses /tmp by default for buffering on Unix systems.</SPAN>
+		</P>
+		<P class="p182 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">In a clustered environment, using a disk space on an NFS mount for buffering improves performance.</SPAN>
+		</P>
+		<P class="p183 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">The “buffer” scratch disk pool needs to be defined to allow the framework to perform data buffering.</SPAN>
+		</P>
+		<P class="p184 ft4">Answer: A</P>
+		<P class="p185 ft0">Question: 102</P>
+		<P class="p134 ft1">How is DataStage Table Metadata shared among DataStage projects?</P>
+		<P class="p69 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">DataStage Tables cannot be shared between projects.</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Import another copy of the table metadata into the project where it is required.</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Use the “Shared Table Creation Wizard” to create a copy of the table in the shared repository.</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Export DataStage Table Definitions from one project and importing them into another project.</SPAN>
+		</P>
+		<P class="p186 ft1">
+			<SPAN class="ft1">E.</SPAN>
+			<SPAN class="ft3">Use the lmportlExport Manager to move the DataStage Table Definition to the projects where it is needed.</SPAN>
+		</P>
+		<P class="p187 ft4">Answer: C</P>
+		<P class="p185 ft0">Question: 103</P>
+		<P class="p60 ft1">You have a parallel shared container that is used by other parallel jobs within your project. Part of the logic in this shared container has been changed. Which two statements are true regarding this change to the parallel shared container? (Choose two.)</P>
+	</DIV>
+	<DIV id="page_37">
+		<P class="p3 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Jobs using this parallel shared container need to be </SPAN>
+			<NOBR>re-compiled.</NOBR>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Use usage analysis and </SPAN>
+			<NOBR>multi-compile</NOBR> to <NOBR>re-compile</NOBR> job using this shared container.</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">You can create a sequencer to </SPAN>
+			<NOBR>re-compile</NOBR> all of the routines using this shared container.</P>
+		<P class="p188 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Jobs using this parallel shared container need to be </SPAN>
+			<NOBR>re-compiled</NOBR> only when the metadata of the container is changed.</P>
+		<P class="p33 ft4">Answer: A, B</P>
+		<P class="p64 ft0">Question: 104</P>
+		<P class="p99 ft1">Which three source stages require a schema file when using RCP? (Choose three.)</P>
+		<P class="p11 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">File SetStage</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Data Set Stage</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">External Target Stage</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Column Export Stage</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">E.</SPAN>
+			<SPAN class="ft3">Complex Flat File Stage</SPAN>
+		</P>
+		<P class="p81 ft4">Answer: A, C, D</P>
+		<P class="p64 ft0">Question: 105</P>
+		<P class="p189 ft1">You have a DataStage job on SMP environment. It contains an input sequential file, a Modify stage, followed by a Transformer stage, and an output Sequential File stage. The job is run with three nodes. The engine uses all default settings. How many processes will this job create?</P>
+		<P class="p7 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">9</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">l2</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">16</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">19</SPAN>
+		</P>
+		<P class="p15 ft4">Answer: A</P>
+		<P class="p64 ft0">Question: 106</P>
+		<P class="p35 ft1">Rows of data going into a Transformer stage are sorted and hash partitioned by the Input.Product column. Using stage variables, how can you determine when a new row is the first of a new group of Product rows?</P>
+		<P class="p190 ft1">A. Create a stage variable named sv_lsNewProduct and follow it by a second stage variable named</P>
+	</DIV>
+	<DIV id="page_38">
+		<P class="p37 ft1">sv_Product. Map the lnput.Product column to</P>
+		<P class="p191 ft1">sv_Product. The derivation for sv_lsNewProduct is: IF lnput.Product = sv_Product THEN “YES” ELSE “NO”.</P>
+		<P class="p188 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Create a stage variable named sv_lsNewProduct and follow it by a second stage variable named sv_Product. Map the lnput.Product column to</SPAN>
+		</P>
+		<P class="p192 ft1">sv_Product. The derivation for sv_lsNewProduct is: IF lnput.Product &lt;&gt; sv_Product THEN “YES” ELSE “NO”.</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Create a stage variable named sv_Product and follow it by a second stage variable named</SPAN>
+		</P>
+		<P class="p37 ft6">sv_lsNewProduct. Map the lnput.Product column to</P>
+		<P class="p191 ft1">sv_Product. The derivation for sv_lsNewProduct is: IF lnput.Product = sv_Product THEN “YES” ELSE “NO”.</P>
+		<P class="p193 ft1">D. Create a stage variable named sv_Product and follow it by a second stage variable named sv_lsNewProduct. Map the lnput.Product column to</P>
+		<P class="p194 ft1">sv_Product. The derivation for sv_lsNewProduct is: IF lnput.Product &lt;&gt; sv_Product THEN “YES” ELSE “NO”.</P>
+		<P class="p15 ft4">Answer: B</P>
+		<P class="p64 ft0">Question: 107</P>
+		<P class="p195 ft1">You are required to use a Make Vector stage in your job. What three requirements must be met in order to use this stage? (Choose three.)</P>
+		<P class="p2 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Columns must be in consecutive order.</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Input columns must all be of the same data type.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Input columns must form a numeric sequence.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">All columns are combined into a vector of the same length as the number of columns.</SPAN>
+		</P>
+		<P class="p93 ft6">
+			<SPAN class="ft6">E.</SPAN>
+			<SPAN class="ft7">Input columns that do not have a name of form &lt;column_name&gt;O to &lt;column_name&gt;n, where &lt;column_name&gt; is the column name and 0 and</SPAN>
+		</P>
+		<P class="p196 ft1">n are the first and last of its consecutive numbers will not be included in the vector and will be dropped.</P>
+		<P class="p75 ft4">Answer: B, C, D</P>
+		<P class="p64 ft0">Question: 108</P>
+		<P class="p197 ft8">The Change Apply stage produces a change Data Set with a new column representing the code for the type of change. What are three change values identified by these code values? (Choose three.)</P>
+		<P class="p7 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Copy</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Edit</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Final</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Deleted</SPAN>
+		</P>
+	</DIV>
+	<DIV id="page_39">
+
+		<P class="p37 ft1">E. Remove Duplicates</P>
+		<P class="p48 ft4">Answer: A, B, D</P>
+		<P class="p64 ft0">Question: 109</P>
+		<P class="p198 ft8">Your job design calls for using a target ODBC Connector stage. The target database is found on a remote server. The target table you are writing into contains a single column primary key. What are the three “Write mode” properties that allow the possibility of multiple SQL actions? (Choose three.)</P>
+		<P class="p7 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Join then update</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Truncate then add</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Insert then update</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Delete then insert</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">E.</SPAN>
+			<SPAN class="ft3">Update then insert</SPAN>
+		</P>
+		<P class="p48 ft4">Answer: C, D, E</P>
+		<P class="p64 ft0">Question: 110</P>
+		<P class="p164 ft1">You are experiencing performance issues for a given job. You are assigned the task of understanding what is happening at run time for that job. What are the first two steps you should take to understand the job performance issues? (Choose two.)</P>
+		<P class="p11 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Review the objectives of the job.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Run job with $APT_TRACE_RUN set to true.</SPAN>
+		</P>
+		<P class="p3 ft6">
+			<SPAN class="ft6">C.</SPAN>
+			<SPAN class="ft7">Run job with $APT_DUMP_SCORE set to true.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Replace Transformer stages with custom operators.</SPAN>
+		</P>
+		<P class="p9 ft4">Answer: A, C</P>
+		<P class="p64 ft0">Question: 111</P>
+		<P class="p6 ft1">Which three data types can the ODBC Enterprise stage handle? (Choose three.)</P>
+		<P class="p11 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">SQL_GLOB</SPAN>
+		</P>
+		<P class="p3 ft6">
+			<SPAN class="ft6">B.</SPAN>
+			<SPAN class="ft7">SQL_BIGINT</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">SQL_TIMESTAMP</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">SQL_VARBINARY</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">E.</SPAN>
+			<SPAN class="ft3">SQL_SMALLDATETIME</SPAN>
+		</P>
+	</DIV>
+	<DIV id="page_40">
+
+		<P class="p199 ft4">Answer: B, C, D</P>
+		<P class="p64 ft0">Question: 112</P>
+		<P class="p178 ft1">There is a requirement to transfer a large file using an FTP Enterprise stage. How can you minimize processing time when a transfer failure occurs?</P>
+		<P class="p2 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Specify restartable mode on a transfer of the single file.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Manually split the file into multiple files and specify restartable mode on a transfer.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Create multiple readers to transfer file data and specify restartable mode on Input link tab.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Use a sequencer to check transfer status and restart the job from the beginning on failure.</SPAN>
+		</P>
+		<P class="p15 ft4">Answer: B</P>
+		<P class="p64 ft0">Question: 113</P>
+		<P class="p6 ft1">Which two statements are true about DataStage parallel routines? (Choose two.)</P>
+		<P class="p7 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Parallel routines are written in DataStage Basic.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Parallel routines are coded within a DataStage Designer editor.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Parallel routines created as shared library functions are not supported.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Parallel routines can be written that are called before or after a stage runs.</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">E.</SPAN>
+			<SPAN class="ft3">Parallel routines can be written that are called from within the Transformer stage.</SPAN>
+		</P>
+		<P class="p9 ft4">Answer: D, E</P>
+		<P class="p64 ft0">Question: 114</P>
+		<P class="p200 ft1">You are assigned to correct a job from another developer. The job contains 20 stages sourcing data from two Data Sets and many sequential files. The annotation in the job indicates who wrote the job and when, not the objective of the job. All link and stage names use the default names. One of the output columns has an incorrect value which should have been obtained using a lookup. What could the original developer have done to make this task easier for maintenance purposes?</P>
+		<P class="p11 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Named all stage and links the same.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Named all stages and links based on what they do.</SPAN>
+		</P>
+		<P class="p3 ft6">
+			<SPAN class="ft6">C.</SPAN>
+			<SPAN class="ft7">Indicated all stage names within the job annotation.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Named all stage and links with column names and ideas.</SPAN>
+		</P>
+		<P class="p15 ft4">Answer: B</P>
+	</DIV>
+	<DIV id="page_41">
+		<P class="p201 ft0">Question: 115</P>
+		<P class="p134 ft1">Which three statements are true about stage variables in a Transformer Stage? (Choose three.)</P>
+		<P class="p66 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Stage variables can be set to NULL.</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Varchar stage variables can be initialized with spaces.</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Stage variables are refreshed with default values before each new input row is processed.</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">The expression executed for a stage variable can refer to a stage variable which is executed later.</SPAN>
+		</P>
+		<P class="p202 ft1">
+			<SPAN class="ft1">E.</SPAN>
+			<SPAN class="ft3">A stage variable in one Transformer can refer to a stage variable in another Transformer, as long as the second Transformer was processed earlier in the job flow.</SPAN>
+		</P>
+		<P class="p203 ft4">Answer: A, B, D</P>
+		<P class="p185 ft0">Question: 116</P>
+		<P class="p204 ft1">You are responsible for the projects Source Code Repository. When a developer notifies you that changes are ready to deploy you must first check them in. You will use the Information Server Source Code integration features to check in the changed assets. How will you identify the DataStage assets the developer modified in order to send them to the workspace?</P>
+		<P class="p205 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">From the Information Server Manager Select the project then </SPAN>
+			<NOBR>right-click</NOBR> on Synchronize with source code control system.</P>
+		<P class="p202 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Use Designer client Advanced Find, specify a modification date and the developer’s username in the Modified by fields.</SPAN>
+		</P>
+		<P class="p206 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">From Information Server Manager use Search with advanced options, specify a date modified and the developer’s user name in the Modified by fields.</SPAN>
+		</P>
+		<P class="p207 ft2">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft10">From the workspace perspective select the project </SPAN>
+			<NOBR>Right-click</NOBR> then Refresh from repository,specify a modification date and the developer’s username in the Modified by fields.</P>
+		<P class="p117 ft4">Answer: C</P>
+		<P class="p185 ft0">Question: 117</P>
+		<P class="p208 ft1">What are two fundamental functions of the Information Server Source Code Integration based on the Eclipse Team framework? (Choose two.)</P>
+		<P class="p135 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Commit Changes</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Rollback Changes</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Send to Source Code Control Workspace</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Replace from Source Code Control Workspace</SPAN>
+		</P>
+		<P class="p73 ft4">Answer: C, D</P>
+	</DIV>
+	<DIV id="page_42">
+		<P class="p131 ft0">Question: 118</P>
+		<P class="p6 ft1">How does the Complex Flat File stage (CFF) support the use of “OCCURS DEPENDING ON” clause?</P>
+		<P class="p11 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">CFF does not support this clause.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">The related elements are output as arrays.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">The related elements are output as subrecords.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">The related elements are output as denormalized fields.</SPAN>
+		</P>
+		<P class="p83 ft4">Answer: B</P>
+		<P class="p64 ft0">Question: 119</P>
+		<P class="p6 ft1">Click on the Exhibit button.</P>
+		<P class="p209 ft1">Using this report, how many processes and on how many nodes does this score depict?</P>
+		<P class="p7 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">3 processes on 2 nodes</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">3 processes on 3 nodes</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">2 processes on 2 nodes</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">2 processes on 3 nodes</SPAN>
+		</P>
+		<P class="p15 ft4">Answer: A</P>
+		<P class="p64 ft0">Question: 120</P>
+	</DIV>
+	<DIV id="page_43">
+		<P class="p37 ft1">Click on the Exhibit button.</P>
+		<P class="p210 ft1">Which environment variable would provide this information?</P>
+		<P class="p2 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">APT_STATUS</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">APT_DEBUG_PARTITION</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">APT_PM_PLAYER_TIMING</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">APT_SHOW_COMPONENT_CALLS</SPAN>
+		</P>
+		<P class="p15 ft4">Answer: C</P>
+		<P class="p72 ft0">Question: 121</P>
+		<P class="p211 ft8">You have been asked to assess the impact of replacing the DB2 Enterprise Stage with the DB2 Connector. You must identify all of the jobs and shared containers that use the DB2 Enterprise Stage. What two Advanced Find criteria would you set to identify the jobs and containers?</P>
+		<P class="p110 ft1">(Choose two.)</P>
+		<P class="p11 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Type</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Where used</SPAN>
+		</P>
+		<P class="p3 ft6">
+			<SPAN class="ft6">C.</SPAN>
+			<SPAN class="ft7">Dependent upon</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Include Read only objects</SPAN>
+		</P>
+		<P class="p33 ft4">Answer: A, B</P>
+		<P class="p64 ft0">Question: 122</P>
+		<P class="p55 ft1">A customer wants to select the entire order details for the largest transaction for each of 2 million customers from a 20 million row DB2 source table containing order history. Which parallel job design would satisfy this functional requirement?</P>
+		<P class="p212 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Partition on customer key, sort on customer key and transaction amount, remove duplicates on customer key.</SPAN>
+		</P>
+		<P class="p53 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Use a Sort Aggregator stage with calculated column based on the maximum value of transaction amount column.</SPAN>
+		</P>
+		<P class="p213 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Partition and sort the input to a Filter stage by customer number. Filter with the clause “MAX(transaction_amou nt)”.</SPAN>
+		</P>
+	</DIV>
+	<DIV id="page_44">
+		<P class="p214 ft1">D. Partition and sort the input to a RemoveDuplicates stage using the customer key and transaction amount columns. Remove duplicates on customer key.</P>
+		<P class="p187 ft4">Answer: A</P>
+		<P class="p185 ft0">Question: 123</P>
+		<P class="p215 ft1">You would like to pass values into parameters that will be used in a variety of downstream activity stages within a job sequence. What are three valid ways to do this? (Choose three.)</P>
+		<P class="p135 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Use local parameters.</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Use environment variables.</SPAN>
+		</P>
+		<P class="p60 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Place a parameter set stage on the job sequence.</SPAN>
+		</P>
+		<P class="p70 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Check the “Propagate Parameters” checkbox in the Sequence Job properties.</SPAN>
+		</P>
+		<P class="p216 ft1">
+			<SPAN class="ft1">E.</SPAN>
+			<SPAN class="ft3">Use the UserVariablesActivity Stage to populate the local parameters from an outside source such as a file.</SPAN>
+		</P>
+		<P class="p217 ft4">Answer: A, B, E</P>
+		<P class="p181 ft0">Question: 124</P>
+		<P class="p218 ft1">Using a DB2 for z/OS source database, a 200 million row source table with 30 million distinct values must be aggregated to calculate the average value of two column attributes. What would provide optimal performance while satisfying the business requirements?</P>
+		<P class="p135 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Select all source rows using a DB2 API stage. Aggregate using a Sort Aggregator.</SPAN>
+		</P>
+		<P class="p219 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Using custom SQL with AVG functions and a DISTINCT clause, select all source rows using a DB2 Enterprise stage.</SPAN>
+		</P>
+		<P class="p220 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Using custom SQL with an ORDER BY clause based on key columns, select all source rows using the DB2 API stage. Aggregate using a Hash Aggregator.</SPAN>
+		</P>
+		<P class="p221 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Select all source rows using a DB2 Enterprise stage, use a parallel Sort stage with the specified sort keys, calculate the average values using a parallel Transformer with stage variables and output link constraints.</SPAN>
+		</P>
+		<P class="p117 ft4">Answer: A</P>
+		<P class="p185 ft0">Question: 125</P>
+		<P class="p73 ft1">You are setting up project defaults. Which three items can be set in DataStage Administrator? (Choose three.)</P>
+	</DIV>
+	<DIV id="page_45">
+
+		<P class="p3 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">suite roles</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">default for compile options</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">defaults for environment variables</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">default for Runtime Column Propagation</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">E.</SPAN>
+			<SPAN class="ft3">default prompting options, such as Autosave job before compile</SPAN>
+		</P>
+		<P class="p75 ft4">Answer: B, C, D</P>
+		<P class="p64 ft0">Question: 126</P>
+		<P class="p21 ft1">What would help debug the <NOBR>run-time</NOBR> environment?</P>
+		<P class="p2 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">$APT_VERBOSE</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">$OSH_PRINT_SCHEMAS</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Check the message filters for the job.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">View detailed runtime stats through Job monitor in Director Client.</SPAN>
+		</P>
+		<P class="p15 ft4">Answer: B</P>
+		<P class="p118 ft0">Question: 127</P>
+		<P class="p6 ft1">Which two statements are correct when using the Oracle Enterprise stage? (Choose two.)</P>
+		<P class="p11 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">$APT_ORCHHOMEIbin must appear before $ORACLE_HOMEIbin in the $PATH.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Define variable $TNS_ADMIN to point to the tnsnames.ora file location.</SPAN>
+		</P>
+		<P class="p3 ft6">
+			<SPAN class="ft6">C.</SPAN>
+			<SPAN class="ft7">DataStage Designer requires connectivity to the Oracle database during job development.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Add $ORACLE_HOMEIbin to the $PATH and $ORACLE_HOMEIIib to the $LIBPATH,</SPAN>
+		</P>
+		<P class="p37 ft1">$LD_LIBRARY_PATH, or $SHLIB_PATH.</P>
+		<P class="p9 ft4">Answer: A, D</P>
+		<P class="p72 ft0">Question: 128</P>
+		<P class="p6 ft1">Which three actions can improve sort performance in a DataStage job? (Choose three.)</P>
+		<P class="p7 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Specify only the key columns which are necessary.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Minimize the number of sorts used within a job flow.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Adjust the “Restrict Memory Usage” option in the Sort stage.</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Run the job sequentially so that only one sort process is invoked.</SPAN>
+		</P>
+	</DIV>
+	<DIV id="page_46">
+
+		<P class="p37 ft1">E. Use the <NOBR>stable-sort</NOBR> option to avoid the random ordering of <NOBR>non-key</NOBR> data.</P>
+		<P class="p48 ft4">Answer: A, B, C</P>
+		<P class="p64 ft0">Question: 129</P>
+		<P class="p222 ft1">You are running a DataStage job using a <NOBR>2-node</NOBR> configuration file. How can a <NOBR>fixed-width</NOBR> single sequential file be read in parallel? (Choose two.)</P>
+		<P class="p7 ft1">
+			<SPAN class="ft2">A.</SPAN>
+			<SPAN class="ft3">Use an external Source stage.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">B.</SPAN>
+			<SPAN class="ft3">Specify a node constraint for the SequentialFile stage.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">C.</SPAN>
+			<SPAN class="ft3">Set the Execution Mode to the SequentialFile stage to “Parallel”.</SPAN>
+		</P>
+		<P class="p3 ft1">
+			<SPAN class="ft1">D.</SPAN>
+			<SPAN class="ft3">Set the “Read From Multiple Nodes” optional property to a value greater than 1.</SPAN>
+		</P>
+		<P class="p27 ft1">
+			<SPAN class="ft1">E.</SPAN>
+			<SPAN class="ft3">Set the “Number of Readers per Node” optional property to a value greater than 1.</SPAN>
+		</P>
+		<P class="p126 ft12">Answer: D, E</P>
+	</DIV>
+</BODY>
